@@ -19,7 +19,7 @@ The notebooks are numbered in the order they should be run.
    Applies Lipinski's rule of five and removes PAINS and Brenk structural alerts. Includes a radar plot comparing the dataset's molecular weight, H-bond donors/acceptors and LogP against standard drug-like thresholds. Around 6500 of the original 7000 compounds pass the rule of five.
 
 
-3.`3.gnn.ipynb` / `4.gnn.ipynb` (later versions of the same notebook)
+3.`3.gnn.ipynb`  
    Builds PyTorch Geometric graph objects from the SMILES strings (atom and bond level features), splits the data using a scaffold split rather than a random split so the test set contains chemotypes not seen during training, then trains and compares two GNN architectures:
    - a dual encoder model that fuses a GAT branch and a GIN branch with the precomputed fingerprints (referred to as AttentionDGCL in the code)
    - AttentiveFP, a single attention based GNN that works directly on the atom/bond graph without fingerprints
